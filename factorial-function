@@ -1,0 +1,23 @@
+
+//factorial function which reads number then calculates the its factorial
+
+//includes
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+void factorial(void)
+{
+	int num;                              //number req to calculate factorial of
+	int i;                                //counter
+	int result=1;                         //to store updated result 
+	printf("\n*****Welcome to Factorial program*****\n");
+	printf("Enter Number: ");
+	scanf("%d",&num);                     //reads number from user
+
+	for(i=1;i<=num;i++)
+	{
+		result=result*i;                  //multiply result by numbers increasing from 1 to number
+	}
+	printf("\n%d!= %d",num,result);       //display final result
+}
